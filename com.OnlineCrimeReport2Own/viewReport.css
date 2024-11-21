@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("Images/bg2.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+table.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table.dataTable th, table.dataTable td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table.dataTable th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+table.dataTable td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+table.dataTable td.description-cell {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-group a, .btn-group button {
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-group a:hover, .btn-group button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    table.dataTable {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    table.dataTable th, table.dataTable td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    table.dataTable th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    table.dataTable td {
+        border: none;
+        padding: 10px 0;
+        position: relative;
+        text-align: right;
+        white-space: normal;
+    }
+    table.dataTable td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        white-space: nowrap;
+    }
+}

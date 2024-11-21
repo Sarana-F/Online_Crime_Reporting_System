@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e0e0e0; /* Light grey background for a clean look */
+}
+
+.bg-img {
+  background: url("Images/bg3.jpeg"); /* Update with your background image */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg-img:after {
+  display: none; /* Remove extra transparent layer */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 30px 50px;
+  width: 490px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for readability */
+  backdrop-filter: blur(8px); /* Reduced blur for better readability */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for a softer effect */
+  border-radius: 12px; /* Rounded corners for a modern look */
+}
+
+.content header {
+  color: #333; /* Darker color for better contrast */
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content header i {
+  margin-right: 12px;
+  color: #007bff; /* Bootstrap primary color for a modern look */
+}
+
+.typewriter .txt-type {
+  color: #007bff; /* Match typewriter text with header icon */
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f8f9fa; /* Light background for input fields */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.field span {
+  color: #007bff;
+  width: 50px;
+  text-align: center;
+}
+
+.field input {
+  height: 50px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #ced4da; /* Light border for input fields */
+  outline: none;
+  color: #495057; /* Darker text color for better readability */
+  font-size: 16px;
+  border-radius: 8px;
+  padding-left: 15px;
+}
+
+.field input:focus {
+  border-color: #007bff; /* Highlight border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Subtle focus shadow */
+}
+
+.field input::placeholder {
+  color: #6c757d; /* Placeholder text color */
+}
+
+.field .show {
+  position: absolute;
+  right: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.pass-key:valid ~ .show {
+  display: block;
+}
+
+.error-msg {
+  color: #dc3545; /* Bootstrap danger color for error messages */
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.signup {
+  font-size: 16px;
+}
+
+.signup p {
+  color: #6c757d; /* Subtle color for the signup message */
+}
+
+.signup a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  background: #007bff;
+  color: white;
+  border: none;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #0056b3; /* Darker shade of blue for hover effect */
+}

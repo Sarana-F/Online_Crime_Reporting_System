@@ -1,0 +1,94 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url('Images/background3.jpg'); /* Update with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.typewriter {
+    margin-bottom: 20px;
+}
+
+.typewriter .txt-type {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.field span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+    color: #333;
+}
+
+.field.space input {
+    margin-top: 10px;
+}
+
+.field input[type="submit"] {
+    background: #ff5722;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.options p {
+    margin-top: 20px;
+    color: #ddd;
+}
+
+.options a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}

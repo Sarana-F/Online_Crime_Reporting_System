@@ -1,0 +1,151 @@
+/* General styling */
+*
+ 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #5d576b; /* Corrected background color code */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+/* Container styling */
+.container {
+  width: 80%;
+  background-color: #f7ede2;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  
+  border-radius: 10px;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Field styling */
+/* General styling for the input fields within .field */
+/* General styling for the input fields within .field */
+.field {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+    padding-bottom: 4px;
+}
+
+.field input {
+    width: calc(100% - 20px); /* Adjust width to account for padding or other elements */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+    background-color: #fff; /* Ensure the background color is set */
+}
+
+/* Input field focus and hover styling */
+.field input:focus {
+    border-color: rgb(65, 78, 245); /* Use RGB or HEX values for brand color */
+    box-shadow: 0 0 5px rgba(65, 78, 245, 0.5);
+    outline: none; /* Remove default browser outline */
+}
+
+.field input:hover {
+    border-color: rgb(65, 78, 245); /* Adjust to a lighter or different color if needed */
+}
+
+/* Placeholder styling */
+.field input::placeholder {
+    color: #bbb;
+    opacity: 1; /* Ensure placeholder text is visible */
+}
+
+/* Error handling styling for .field */
+.field input.error {
+    border-color: rgb(221, 134, 137); /* Use RGB or HEX values for error color */
+    box-shadow: 0 0 5px rgba(221, 134, 137, 0.5);
+}
+
+/* Disabled input styling */
+.field input:disabled {
+    background: #eee;
+    color: #666;
+}
+
+
+
+.field input, .field select, .field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+/* Button styling */
+.buttons {
+  text-align: center;
+}
+
+.btn-cancel, .btn-submit {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.btn-cancel {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #c0392b;
+}
+
+.btn-submit {
+  background: #3498db;
+  color: white;
+}
+
+.btn-submit:hover {
+  background: #2980b9;
+}

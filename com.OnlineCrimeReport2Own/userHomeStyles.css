@@ -1,0 +1,113 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    position: relative;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #007bff;
+}
+
+nav a {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section */
+.hero {
+    background: url("Images/background3.jpg") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive font size for hero section */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Buttons */
+.btn-light {
+    background: #ffffff;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-light:hover {
+    background: #ffdd57;
+    color: #fff;
+}
+
+/* About Us and Features sections */
+.about, .features {
+    background: #fff;
+}
+
+.feature-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
